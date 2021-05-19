@@ -83,6 +83,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jy-YU-EOk">
                                                     <rect key="frame" x="343" y="65" width="62" height="30"/>
                                                     <state key="normal" title="Continue"/>
+                                                    <connections>
+                                                        <action selector="btnContinue:" destination="0gQ-ZF-V65" eventType="touchUpInside" id="e4j-Q0-YWK"/>
+                                                    </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9lH-HR-RhJ">
                                                     <rect key="frame" x="370" y="10" width="30" height="30"/>
@@ -113,6 +116,7 @@
                                         <size key="customSize" width="410" height="100"/>
                                         <connections>
                                             <outlet property="btnContinue" destination="3Jy-YU-EOk" id="hDP-PS-WRK"/>
+                                            <outlet property="continueBtn" destination="3Jy-YU-EOk" id="yGX-gq-G8r"/>
                                             <outlet property="imgStatus" destination="9lH-HR-RhJ" id="qBE-lX-n4p"/>
                                             <outlet property="lblCustomerRef" destination="fa6-Ub-U3k" id="BCq-Z5-3Nw"/>
                                             <outlet property="lblNoOfItems" destination="QOm-rr-qYi" id="mpB-nM-dax"/>

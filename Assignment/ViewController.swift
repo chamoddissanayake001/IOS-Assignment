@@ -15,6 +15,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet weak var orderCollectionView: UICollectionView!
     
+    @IBOutlet weak var continueBtn: UIButton!
     var orderArray = [Order]()
 
     override func viewDidLoad() {
@@ -42,6 +43,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OrderCollectionViewCell", for: indexPath) as! OrderCollectionViewCell
+        
+        cell.continueBtnPresse={
+            print("kkk");
+            print(self.orderArray[indexPath.row].orderNo)
+            
+        };
+        
         cell.setup(with: orderArray[indexPath.row])
         return cell
         

@@ -16,6 +16,7 @@ class OrderCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var btnContinue: UIButton!
     @IBOutlet weak var imgStatus: UIImageView!
     
+    @IBOutlet weak var continueBtn: UIButton!
     
     func setup(with order: Order){        
         lblOrderNo.text = order.orderNo
@@ -24,4 +25,15 @@ class OrderCollectionViewCell: UICollectionViewCell {
           
       }
     
+//    @IBAction func btnContinuePressed(_ sender: UIButton){
+//    self.continueBtnPresse?()
+//    }
+//    @IBOutlet weak var btnfff: UIView!{
+//        
+//    }ßß
+    
+    @IBAction func btnContinue(_ sender: Any) {
+        self.continueBtnPresse?()
+    }
+    var continueBtnPresse:(()->())?
 }
