@@ -45,17 +45,26 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OrderCollectionViewCell", for: indexPath) as! OrderCollectionViewCell
         
         cell.continueBtnPresse={
-            print("---------------------------------------")
-            print("Order No: "+self.orderArray[indexPath.row].orderNo!)
-            print("Customer Reference: "+self.orderArray[indexPath.row].customerRef!)
-            print("No Of Items: "+self.orderArray[indexPath.row].noOfItems!)
-            print("---------------------------------------")
-            
+            self.printCellData(indexPath: indexPath)
         };
         
         cell.setup(with: orderArray[indexPath.row])
         return cell
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            
+        self.printCellData(indexPath: indexPath)
+        
+    }
+    
+    func printCellData(indexPath: IndexPath){
+        print("---------------------------------------")
+        print("Order No: "+self.orderArray[indexPath.row].orderNo!)
+        print("Customer Reference: "+self.orderArray[indexPath.row].customerRef!)
+        print("No Of Items: "+self.orderArray[indexPath.row].noOfItems!)
+        print("---------------------------------------")
     }
 
 }
