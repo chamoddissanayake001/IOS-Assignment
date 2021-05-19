@@ -30,13 +30,6 @@ class OrderCollectionViewCell: UICollectionViewCell {
           
       }
     
-//    @IBAction func btnContinuePressed(_ sender: UIButton){
-//    self.continueBtnPresse?()
-//    }
-//    @IBOutlet weak var btnfff: UIView!{
-//        
-//    }ßß
-    
     @IBAction func btnContinue(_ sender: Any) {
         self.continueBtnPresse?()
     }
