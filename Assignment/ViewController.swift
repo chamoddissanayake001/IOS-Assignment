@@ -45,8 +45,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OrderCollectionViewCell", for: indexPath) as! OrderCollectionViewCell
         
         cell.continueBtnPresse={
-            print("kkk");
-            print(self.orderArray[indexPath.row].orderNo)
+            print("---------------------------------------")
+            print("Order No: "+self.orderArray[indexPath.row].orderNo!)
+            print("Customer Reference: "+self.orderArray[indexPath.row].customerRef!)
+            print("No Of Items: "+self.orderArray[indexPath.row].noOfItems!)
+            print("---------------------------------------")
             
         };
         
