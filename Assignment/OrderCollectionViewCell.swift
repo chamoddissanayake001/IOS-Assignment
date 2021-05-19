@@ -22,6 +22,11 @@ class OrderCollectionViewCell: UICollectionViewCell {
         lblOrderNo.text = order.orderNo
         lblCustomerRef.text = order.customerRef
         lblNoOfItems.text = order.noOfItems
+        if (order.status == true){
+            imgStatus.image = #imageLiteral(resourceName: "checked")
+        }else{
+            imgStatus.image = #imageLiteral(resourceName: "unchecked")
+        }
           
       }
     
