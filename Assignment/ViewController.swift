@@ -1,15 +1,4 @@
-//
-//  ViewController.swift
-//  Assignment
-//
-//  Created by user164640 on 5/19/21.
-//  Copyright © 2021 user164640. All rights reserved.
-//
-
 import UIKit
-
-
-
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -20,7 +9,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         orderCollectionView.dataSource = self
         orderCollectionView.delegate = self
         
@@ -54,8 +43,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            
-//        self.printCellData(indexPath: indexPath)
         
         cellClicked(indexPath: indexPath) { () -> () in
 

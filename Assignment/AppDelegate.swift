@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Assignment
-//
-//  Created by user164640 on 5/19/21.
-//  Copyright © 2021 user164640. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
