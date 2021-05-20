@@ -55,7 +55,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             
-        self.printCellData(indexPath: indexPath)
+//        self.printCellData(indexPath: indexPath)
         
         cellClicked(indexPath: indexPath) { () -> () in
 
@@ -66,7 +66,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func cellClicked(indexPath : IndexPath, completion: ()->()) {
 
         printCellData(indexPath: indexPath)
-        
+            
     }
 
 
