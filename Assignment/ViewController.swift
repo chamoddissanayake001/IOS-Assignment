@@ -44,7 +44,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OrderCollectionViewCell", for: indexPath) as! OrderCollectionViewCell
         
-        cell.continueBtnPresse={
+        cell.continueBtnPressed={
             self.printCellData(indexPath: indexPath)
         };
         
@@ -57,7 +57,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
         self.printCellData(indexPath: indexPath)
         
+        cellClicked(indexPath: indexPath) { () -> () in
+
+        }
+           
     }
+    
+    func cellClicked(indexPath : IndexPath, completion: ()->()) {
+
+        printCellData(indexPath: indexPath)
+        
+    }
+
+
     
     func printCellData(indexPath: IndexPath){
         print("---------------------------------------")

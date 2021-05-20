@@ -31,7 +31,7 @@ class OrderCollectionViewCell: UICollectionViewCell {
       }
     
     @IBAction func btnContinue(_ sender: Any) {
-        self.continueBtnPresse?()
+        self.continueBtnPressed?()
     }
-    var continueBtnPresse:(()->())?
+    var continueBtnPressed:(()->())?
 }
